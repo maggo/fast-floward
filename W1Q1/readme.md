@@ -1,0 +1,3 @@
+```
+$ flow cadence script.cdc
+```
