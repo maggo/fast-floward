@@ -1,0 +1,32 @@
+{
+  "emulators": {
+    "default": {
+      "port": 3569,
+      "serviceAccount": "emulator-account"
+    }
+  },
+  "contracts": {
+    "Artist": "./Artist.contract.cdc"
+  },
+  "networks": {
+    "emulator": "127.0.0.1:3569",
+    "mainnet": "access.mainnet.nodes.onflow.org:9000",
+    "testnet": "access.devnet.nodes.onflow.org:9000"
+  },
+  "accounts": {
+    "emulator-account": {
+      "address": "f8d6e0586b0a20c7",
+      "key": "ae2b7a96b57f7eba83209088a510bf5452c5c21b394a8a8f54b36c2f7278c495"
+    },
+    "secondary-account": {
+      "address": "01cf0e2f2f715450",
+      "key": "56827f6ad84b2ce1de6ec3d95b620d4d62030ec1331b3768cb8bb19c1eb317c8"
+    }
+  },
+  "deployments": {
+    "emulator": {
+      "emulator-account": ["Artist"],
+      "secondary-account": []
+    }
+  }
+}
